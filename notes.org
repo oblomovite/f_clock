@@ -1,0 +1,52 @@
+#+TITLE: Flutter Notes
+#+HEADER: :eval never
+
+* Flutter Development
+** Create a new app
+#+begin_src sh
+  flutter create <my_app> && cd <my_app>
+#+end_src
+or pass in
+or with extra arguments like the project name, organization name, or to
+specificy host languages on iOS/Android
+#+begin_src sh
+  flutter create --project-name <my_app> --org dev.flutter --android-language java --ios-language objc <my_app>
+#+end_src
+
+** Run an iOS simulator from the terminal
+#+begin_src sh
+  open -a Simulator
+  flutter run ios
+#+end_src
+
+** Run android simulation (physical)
+#+begin_src sh
+  flutter run android
+#+end_src
+
+** Managing dependencies
+*** Update packages inside =pubspec.yaml=
+#+begin_src sh
+  flutter pub get
+#+end_src
+*** Add a new package
+#+begin_src sh
+  flutter pub get <package.name>
+#+end_src
+
+** Formatting
+#+begin_src sh
+  flutter format .
+#+end_src
+
+** Useful Links
+*** General Setup
+https://docs.flutter.dev/get-started/install/macos
+*** Android Emulation
+https://developer.android.com/studio/run/emulator-acceleration
+
+* Git
+** Create a new repository
+#+begin_src sh
+  git init
+#+end_src
